@@ -10,4 +10,4 @@ burn_cap=0.5
 contract_name=HelloWorld
 account_name=alice
 
-tezos-client transfer 0 from alice to HelloWorld --burn-cap 0.5 --entrypoint personalized --arg \"${1}\"
+tezos-client transfer 0 from ${account_name} to ${contract_name} --burn-cap 0.5 --entrypoint personalized --arg \"${1}\"
